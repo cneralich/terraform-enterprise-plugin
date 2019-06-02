@@ -215,7 +215,7 @@ public class TerraformBuildWrapper extends BuildWrapper {
 		}
 	}
 
-	public void executeSwitch(AbstractBuild build, final Launcher launcher, final BuildListener listener)
+	/*public void executeSwitch(AbstractBuild build, final Launcher launcher, final BuildListener listener)
 			throws Exception {
 		ArgumentListBuilder args = new ArgumentListBuilder();
 		EnvVars env = build.getEnvironment(listener);
@@ -230,7 +230,7 @@ public class TerraformBuildWrapper extends BuildWrapper {
 
 		/*
 		 * if (doGetUpdate) { args.add("-update"); }
-		 */
+		 
 
 		LOGGER.info("Launching Terraform Workspace: " + args.toString());
 
@@ -239,7 +239,7 @@ public class TerraformBuildWrapper extends BuildWrapper {
 		if (result != 0) {
 			throw new Exception("Terraform Workspace failed: " + result);
 		}
-	}
+	}*/
 
 	public void executeApply(AbstractBuild build, final Launcher launcher, final BuildListener listener)
 			throws Exception {
