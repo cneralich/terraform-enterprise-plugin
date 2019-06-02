@@ -274,7 +274,7 @@ public class TerraformBuildWrapper extends BuildWrapper {
 			throws IOException, InterruptedException {
 		try {
 			executeInit(build, launcher, listener);
-			executeSwitch(build, launcher, listener);
+			// executeSwitch(build, launcher, listener);
 			// get executable and var-file from environment
 			EnvVars env = build.getEnvironment(listener);
 			String executable = getExecutable(env, listener, launcher);
